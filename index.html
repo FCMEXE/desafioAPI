@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="login">
+      <form id="form-pessoa" class="">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome" required />
+        <br />
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          placeholder="Telefone"
+          required
+        />
+        <br />
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="CPF" required />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <br />
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="rg" placeholder="RG" required />
+        <br />
+        <label id="">Cargo:</label>
+        <select id="idCargo" name="idCargo" onchange="cargoChoice()" required>
+          <option value="1">Analista de Sistemas</option>
+          <option value="2">Assistente Administrativo</option>
+          <option value="3">Secretário</option>
+          <option value="4">Gerente de Vendas</option>
+          <option value="5">Analista de Marketing</option>
+        </select>
+        <select name="" id="">
+          <option value="" id="cargo"></option>
+        </select>
+        <br />
+        <label for="">Setor:</label>
+        <select id="idSetor" name="idSetor" onchange="setorChoice()" required>
+          <option value="1">Tecnologia da Informação</option>
+          <option value="2">Recursos Humanos</option>
+          <option value="3">Financeiro</option>
+          <option value="4">Marketing e Vendas</option>
+          <option value="5">Produção e Operações</option>
+        </select>
+        <select name="" id="">
+          <option value="" id="setorSelecionado"></option>
+        </select>
+        <br />
+        <label for="">Convênio:</label>
+        <select
+          id="idConvenio"
+          name="idConvenio"
+          onchange="convenioChoice()"
+          required
+        >
+          <option value="1">UNIMED</option>
+          <option value="2">Intermédica</option>
+        </select>
+
+        <select name="" id="">
+          <option value="" id="titularSelecionado"></option>
+        </select>
+        <select name="" id="">
+          <option value="" id="dependenteSelecionado"></option>
+        </select>
+
+        <br />
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
